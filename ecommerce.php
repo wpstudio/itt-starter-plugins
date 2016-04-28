@@ -60,4 +60,7 @@ function itt_custom_suggested_plugin_suite() {
     'is_automatic' => false',
     'message' => ''
   );
+  
+  tgmpa( $plugins, $config );
+  
 }
