@@ -73,7 +73,7 @@ function itt_custom_suggested_plugin_suite() {
     'has_notices' => true,
     'dismissable' => true,
     'dismiss_msg' => '',
-    'is_automatic' => false',
+    'is_automatic' => false,
     'message' => ''
   );
 
