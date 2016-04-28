@@ -5,8 +5,23 @@
 function itt_custom_suggested_plugin_suite() {
   $plugins = array(
     array(
+      'name' => 'Redirection',
+      'slug' => 'redirection',
+      'required' => false,
+    ),
+    array(
       'name' => 'Yoast SEO',
       'slug' => 'wordpress-seo',
+      'required' => false,
+    ),
+    array(
+      'name' => 'WP Mail SMTP',
+      'slug' => 'wp-mail-smtp',
+      'required' => false,
+    ),
+    array(
+      'name' => 'Widget Logic',
+      'slug' => 'widget-logic',
       'required' => false,
     ),
     array(
@@ -37,6 +52,12 @@ function itt_custom_suggested_plugin_suite() {
       'required' => false,
     ),
     array(
+      'name' => 'Gravity Forms',
+      'slug' => 'gravityforms',
+      'source' => 'https://s3.amazonaws.com/itt-plugins/gravityforms.zip',
+      'required' => false,
+    ),
+    array(
       'name' => 'MyCustomPlugin',
       'slug' => 'mycustomplugin',
       'source' => 'https://github.com/itt-plugins/archive/master.zip',
@@ -55,7 +76,7 @@ function itt_custom_suggested_plugin_suite() {
     'is_automatic' => false',
     'message' => ''
   );
-  
+
   tgmpa( $plugins, $config );
-  
+
 }
